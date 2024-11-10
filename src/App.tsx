@@ -10,13 +10,13 @@ import { useUpdateTask } from './hooks/useUpdateTask';
 import { ITask } from './interfaces/ITask';
 
 function App() {
-	const [taskName, setTaskName] = useState<string>('');
-	const [taskDescription, setTaskDescription] = useState<string>('');
+	const [taskName, setTaskName] = useState<string>(''); // Состояние для название задачи
+	const [taskDescription, setTaskDescription] = useState<string>(''); // Состояние для описания задачи
 
-	const { data, isEmpty, complete } = useTasks();
-	const { mutateTask } = useTaskAdd();
-	const { updatedTask } = useUpdateTask();
-	const { deleteTask } = useDeleteTask();
+	const { data, isEmpty, complete } = useTasks(); // хук для получения всех задач
+	const { mutateTask } = useTaskAdd(); // хук на добавление задачи
+	const { updatedTask } = useUpdateTask(); // хук на обновление состояния задачи
+	const { deleteTask } = useDeleteTask(); // хук на удаление
 
 	// Обработчик создания задачи
 	const handleAddTask = useCallback(() => {
