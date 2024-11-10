@@ -56,11 +56,7 @@ export const Task: React.FC<TaskProps> = ({ taskData, onClick, onDelete }) => {
 				onClick={handleDelete}
 				className='px-[6px] py-[5px] rounded-md hover:cursor-pointer hover:bg-gray-400'
 			>
-				<img
-					className='w-[17px] h-[18px]'
-					src='src/assets/trash.svg'
-					alt='Bin'
-				/>
+				<img className='w-[17px] h-[18px]' src='/assets/trash.svg' alt='Bin' />
 			</button>
 		</div>
 	);

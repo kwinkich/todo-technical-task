@@ -37,7 +37,7 @@ function App() {
 		<>
 			<header className='header w-full h-[200px] bg-gray-700 flex justify-center items-center'>
 				<div className='logo flex items-center gap-x-3'>
-					<img src='src/assets/rocket-icon.svg' alt='Logo' />
+					<img src='/assets/rocket-icon.svg' alt='Logo' />
 					<p className='text-4xl font-black'>
 						<span className='text-blue'>to</span>
 						<span className='text-purple-dark'>do</span>
@@ -58,7 +58,7 @@ function App() {
 
 						<Button
 							text='Create'
-							iconLink='src/assets/plus.svg'
+							iconLink='/assets/sssssplus.svg'
 							isDisabled={!taskName || !taskDescription}
 							onClick={handleAddTask}
 						/>
@@ -77,7 +77,7 @@ function App() {
 
 					{isEmpty ? (
 						<div className='empty flex flex-col gap-y-4 items-center p-16'>
-							<img src='src/assets/empty.png' alt='Empty Image' />
+							<img src='/assets/empty.png' alt='Empty Image' />
 							<div className='flex flex-col items-center'>
 								<p className='text-base font-bold text-gray-300'>
 									You don't have any tasks registered yet
