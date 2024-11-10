@@ -58,7 +58,7 @@ function App() {
 
 						<Button
 							text='Create'
-							iconLink='/assets/sssssplus.svg'
+							iconLink='/assets/plus.svg'
 							isDisabled={!taskName || !taskDescription}
 							onClick={handleAddTask}
 						/>
