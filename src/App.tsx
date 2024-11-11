@@ -48,10 +48,12 @@ function App() {
 				<div className='container sm:w-[750px] w-[90%] flex flex-col items-center'>
 					<div className='sm:flex sm:flex-row sm:gap-x-2 flex flex-col w-full items-center gap-y-2 mb-16'>
 						<Input
+							value={taskName}
 							onChange={(e) => setTaskName(e.target.value)}
 							placeholderText='Название задачи'
 						/>
 						<Input
+							value={taskDescription}
 							onChange={(e) => setTaskDescription(e.target.value)}
 							placeholderText='Описание'
 						/>

@@ -37,17 +37,19 @@ export const Task: React.FC<TaskProps> = ({ taskData, onClick, onDelete }) => {
 			</div>
 			<div
 				onClick={handleCheckboxChange}
-				className='flex flex-col items-start gap-1 flex-1'
+				className='max-w-[90%] flex flex-col items-start gap-1 flex-1'
 			>
 				<p
-					className={`text-base font-bold ${
+					className={`break-words text-base font-bold ${
 						isChecked ? 'line-through text-gray-300' : 'text-white'
 					}`}
 				>
 					{taskData?.name}
 				</p>
 				<p
-					className={`text-sm text-gray-300 ${isChecked ? 'line-through' : ''}`}
+					className={`max-w-full break-words text-sm text-gray-300 ${
+						isChecked ? 'line-through' : ''
+					}`}
 				>
 					{taskData?.description}
 				</p>
